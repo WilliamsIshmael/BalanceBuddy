@@ -1,3 +1,5 @@
+// account.js
+
 class Account {
     constructor() {
         this.balances = {};
@@ -17,6 +19,10 @@ class Account {
             total += balance;
         }
         return total;
+    }
+
+    getAccountBalance(accountType) {
+        return this.balances[accountType] || 0;
     }
 }
 
