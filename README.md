@@ -9,7 +9,7 @@ Installation
 
 - Node.js installed on your machine.
 
-🚀 ** Quick Start 
+🚀 **Quick Start 
 
 1. Clone the repository:
 
@@ -29,7 +29,7 @@ Installation
    npm install
    ```
 
-** Usage
+**Usage
 
 To run the account aggregator, execute the following command:
 
@@ -43,7 +43,7 @@ node accountAggregator.js
 Total Balance: $12500
 ```
 
-🤝 ** Contributing
+🤝 **Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
@@ -54,7 +54,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 5. Push to the branch (`git push origin feature/your-feature-name`).
 6. Create a new pull request.
 
-** License
+**License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
