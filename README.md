@@ -37,7 +37,7 @@ To run the account aggregator, execute the following command:
 node accountAggregator.js
 ```
 
-** Example Output
+Example Output
 
 ```
 Total Balance: $12500
@@ -58,7 +58,7 @@ License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-**Acknowledgements
+Acknowledgements
 
 - This project was inspired by the need to aggregate account balances easily.
 
