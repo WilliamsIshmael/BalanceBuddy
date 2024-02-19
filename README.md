@@ -2,17 +2,14 @@ The README file is essential for providing information about your project to use
 
 ---
 
-# Account Aggregator
 
-This is a simple JavaScript project that aggregates balances from various types of accounts for a user.
+⚙️ ** Getting Started
 
-## Getting Started
-
-### Prerequisites
+Installation
 
 - Node.js installed on your machine.
 
-### Installation
+🚀 ** Quick Start 
 
 1. Clone the repository:
 
@@ -32,7 +29,7 @@ This is a simple JavaScript project that aggregates balances from various types 
    npm install
    ```
 
-### Usage
+** Usage
 
 To run the account aggregator, execute the following command:
 
@@ -40,13 +37,13 @@ To run the account aggregator, execute the following command:
 node accountAggregator.js
 ```
 
-### Example Output
+** Example Output
 
 ```
 Total Balance: $12500
 ```
 
-## Contributing
+🤝 ** Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
@@ -57,11 +54,11 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 5. Push to the branch (`git push origin feature/your-feature-name`).
 6. Create a new pull request.
 
-## License
+** License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
+**Acknowledgements
 
 - This project was inspired by the need to aggregate account balances easily.
 
