@@ -1,3 +1,5 @@
+// Think about creating a a class of Accounts which take in account name, type, current amount in account, automatic payments (boolean), amount added, and frequency of contributions
+
 // accountAggregator.js
 
 const Account = require('./account');
@@ -64,3 +66,5 @@ function main() {
 }
 
 main();
+
+
