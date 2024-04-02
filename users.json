@@ -1,1 +1,27 @@
 // JSON file to store users ... A user database 
+
+
+[
+  {
+    "id": 1,
+    "name": "User 1",
+    "balances": {
+      "checking": 1000,
+      "savings": 2000,
+      "retirement": 5000,
+      "brokerage": 3000
+    }
+  },
+  {
+    "id": 2,
+    "name": "User 2",
+    "balances": {
+      "checking": 1500,
+      "savings": 3000,
+      "retirement": 4500,
+      "brokerage": 2500,
+      "HYSA": 2000
+    }
+  },
+  // Add more users as needed
+]
