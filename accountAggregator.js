@@ -1,3 +1,14 @@
+const fs = require("fs");
+
+(async () => {
+  const userData = await fs.promises.readFile("user.json", "utf-8");
+
+  // Your code to handle the JSON data
+const userJSON = JSON.parse(userData);
+  console.log(userJSON);
+})();
+
+
 // Think about creating a a class of Accounts which take in account name, type, current amount in account, automatic payments (boolean), amount added, and frequency of contributions
 
 // accountAggregator.js
