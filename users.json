@@ -4,7 +4,8 @@
 [
   {
     "id": 1,
-    "name": "User 1",
+    "firstName": "Pamela",
+    "lastName": "Page",
     "balances": {
       "checking": 1000,
       "savings": 2000,
@@ -14,7 +15,8 @@
   },
   {
     "id": 2,
-    "name": "User 2",
+    "firstName": "John",
+    "lastName": "Lawson",
     "balances": {
       "checking": 1500,
       "savings": 3000,
