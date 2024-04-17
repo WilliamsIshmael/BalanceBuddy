@@ -10,6 +10,7 @@ const userJSON = JSON.parse(userData);
 
 
 // Think about creating a a class of Accounts which take in account name, type, current amount in account, automatic payments (boolean), amount added, and frequency of contributions
+// Is the code in this file correct in order to pull from the users.js file?
 
 // accountAggregator.js
 
