@@ -1,4 +1,6 @@
-// The Financial Assistant helps people at all levels manage their finances. 
+// The information provided in this file is realistic, but doesn't reflect my, or anyone else's, finances. 
 
-console.log('What is your annual salary?'); 
-
+// Debts - Item, currentBalance, monthlyPaymentAmount, totalPayments 
+// Savings and Investments - accountName, accountType, monthlyContributions, totalContributions
+// totalDebtPayments
+// totalSavings 
