@@ -5,21 +5,23 @@
 // totalDebtPayments
 // totalSavings 
 
-interface Debt {
+type Debt {
   item: string; 
   currentBalance: number; 
-  monthlyPaymentAmount: number; 
+  hasMonthlyPaymentAmount: boolean; 
+  monthlyPaymentAmount: number | null = null; 
   totalPayments: number; 
 } 
 
-interface SavingsAndInvestment {
+type SavingsAndInvestment {
   accountName: string; 
   accountType: string; 
-  monthlyContributions: number; 
+  hasMonthlyContributions: boolean; 
+  monthlyContributions: number | null = null; 
   totalContributions: number; 
 }
 
-interface PersonalFinance { 
+type PersonalFinance { 
   totalDebtPayments: number; 
   totalSavings: number;
 }
