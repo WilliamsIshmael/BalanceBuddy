@@ -26,3 +26,19 @@ type PersonalFinance {
   totalSavings: number;
 }
 
+const americanExpressCreditCardDebt: Debt = {
+  item: "American Express Credit Card; 
+  currentBalance: 12540; 
+  hasMonthlyPaymentAmount: true; 
+  monthlyPaymentAmount: 200; 
+  totalPayments: 5;  
+}
+
+const discoverCreditCardDebt: Debt = {
+  item: "Discover Credit Card; 
+  currentBalance: 3755; 
+  hasMonthlyPaymentAmount: true; 
+  monthlyPaymentAmount: 50; 
+  totalPayments: 10; 
+}
+
