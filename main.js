@@ -27,18 +27,33 @@ type PersonalFinance {
 }
 
 const americanExpressCreditCardDebt: Debt = {
-  item: "American Express Credit Card; 
+  item: "American Express Credit Card"; 
   currentBalance: 12540; 
   hasMonthlyPaymentAmount: true; 
   monthlyPaymentAmount: 200; 
-  totalPayments: 5;  
+  totalPayments: 10000;  
 }
 
 const discoverCreditCardDebt: Debt = {
-  item: "Discover Credit Card; 
+  item: "Discover Credit Card"; 
   currentBalance: 3755; 
   hasMonthlyPaymentAmount: true; 
   monthlyPaymentAmount: 50; 
-  totalPayments: 10; 
+  totalPayments: 500; 
 }
 
+const Barclays: SavingsAndInvestment = {
+  accountName: "Barclays"; 
+  accountType: "High-Yield Savings Account"; 
+  hasMonthlyContributions: true; 
+  monthlyContributions: 1000; 
+  totalContributions: 12000; 
+}
+
+const Vanguard: SavingsAndInvestment = {
+  accountName: "Vanguard"; 
+  accountType: "Investment Account"; 
+  hasMonthlyContributions: true; 
+  monthlyContributions: 550; 
+  totalContributions: 3300; 
+}
