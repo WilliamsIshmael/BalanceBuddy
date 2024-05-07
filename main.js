@@ -42,6 +42,22 @@ const discoverCreditCardDebt: Debt = {
   totalPayments: 500; 
 }
 
+const federalStudentLoans: Debt = {
+  item: "Federal Student Loan"; 
+  currentBalance: 35840; 
+  hasMonthlyPaymentAmount: true; 
+  monthlyPaymentAmount: 50; 
+  totalPayments: 8000;  
+}
+
+const privateStudentLoan: Debt = {
+  item: "Private Student Loan"; 
+  currentBalance: 9345; 
+  hasMonthlyPaymentAmount: true; 
+  monthlyPaymentAmount: 100; 
+  totalPayments: 500; 
+}
+
 const Barclays: SavingsAndInvestment = {
   accountName: "Barclays"; 
   accountType: "High-Yield Savings Account"; 
