@@ -9,7 +9,7 @@ type Debt {
   item: string; 
   currentBalance: number; 
   hasMonthlyPaymentAmount: boolean; 
-  monthlyPaymentAmount: number | null = null; 
+  monthlyPaymentAmount: number; 
   totalPayments: number; 
 } 
 
@@ -17,13 +17,13 @@ type SavingsAndInvestment {
   accountName: string; 
   accountType: string; 
   hasMonthlyContributions: boolean; 
-  monthlyContributions: number | null = null; 
+  monthlyContributions: number; 
   totalContributions: number; 
 }
 
 type PersonalFinance { 
   totalDebtPayments: number; 
-  totalSavings: number;
+  totalContributions: number;
 }
 
 const americanExpressCreditCardDebt: Debt = {
@@ -33,6 +33,7 @@ const americanExpressCreditCardDebt: Debt = {
   monthlyPaymentAmount: 200; 
   totalPayments: 10000;  
 }
+
 
 const discoverCreditCardDebt: Debt = {
   item: "Discover Credit Card"; 
