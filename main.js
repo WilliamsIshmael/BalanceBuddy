@@ -5,6 +5,14 @@
 // totalDebtPayments
 // totalSavings 
 
+`For the type Debt and SavingsAndInvestments, create a value for currentTotalPayments and currentTotalContributions, respectively,
+which adds the monthly payments and contributions to the total totalPayments and totalContributions. 
+
+Console.log "You have paid down ${currentTotalPayments} worth of debt while saving and investing ${currentTotalContributions}! 
+
+Make sure to loop through all the Debts and SavingsAndInvestments to combine all values.
+`
+
 type Debt {
   item: string; 
   currentBalance: number; 
