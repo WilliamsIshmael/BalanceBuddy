@@ -80,37 +80,28 @@ const Vanguard: SavingsAndInvestment = {
   totalContributions: 3300; 
 }
 
-const debts: Debt[] = [
+
+const debts = [
   americanExpressCreditCardDebt,
   discoverCreditCardDebt,
   federalStudentLoans,
   privateStudentLoan,
 ];
 
-const savingsAndInvestments: SavingsAndInvestment[] = [Barclays, Vanguard];
+const savingsAndInvestments = [Barclays, Vanguard];
 
-const personalFinance: PersonalFinance = {
+const personalFinance = {
   totalDebtPayments: 0,
   totalContributions: 0,
 };
 
-let currentDebtPayments = 0;
-let currentContributions = 0;
-
 for (const debt of debts) {
-  if (debt.hasMonthlyPaymentAmount) {
-    currentDebtPayments += debt.monthlyPaymentAmount;
-  }
+  personalFinance.totalDebtPayments += debt.totalPayments;
 }
 
 for (const savingsAndInvestment of savingsAndInvestments) {
-  if (savingsAndInvestment.hasMonthlyContributions) {
-    currentContributions += savingsAndInvestment.monthlyContributions;
-  }
+  personalFinance.totalContributions += savingsAndInvestment.totalContributions;
 }
-
-personalFinance.totalDebtPayments += currentDebtPayments;
-personalFinance.totalContributions += currentContributions;
 
 console.log(
   `You have paid down ${personalFinance.totalDebtPayments} worth of debt while saving and investing ${
