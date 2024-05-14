@@ -15,6 +15,7 @@ type Debt {
   hasMonthlyPaymentAmount: boolean; 
   monthlyPaymentAmount: number; 
   totalPayments: number; 
+
 } 
 
 type SavingsAndInvestment {
@@ -78,3 +79,40 @@ const Vanguard: SavingsAndInvestment = {
   monthlyContributions: 550; 
   totalContributions: 3300; 
 }
+
+const debts: Debt[] = [
+  americanExpressCreditCardDebt,
+  discoverCreditCardDebt,
+  federalStudentLoans,
+  privateStudentLoan,
+];
+
+const savingsAndInvestments: SavingsAndInvestment[] = [Barclays, Vanguard];
+
+const personalFinance: PersonalFinance = {
+  totalDebtPayments: 0,
+  totalContributions: 0,
+};
+
+let currentDebtPayments = 0;
+let currentContributions = 0;
+
+for (const debt of debts) {
+  if (debt.hasMonthlyPaymentAmount) {
+    currentDebtPayments += debt.monthlyPaymentAmount;
+  }
+}
+
+for (const savingsAndInvestment of savingsAndInvestments) {
+  if (savingsAndInvestment.hasMonthlyContributions) {
+    currentContributions += savingsAndInvestment.monthlyContributions;
+  }
+}
+
+personalFinance.totalDebtPayments += currentDebtPayments;
+personalFinance.totalContributions += currentContributions;
+
+console.log(
+  `You have paid down ${personalFinance.totalDebtPayments} worth of debt while saving and investing ${
+    personalFinance.totalContributions}!`
+);
