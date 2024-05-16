@@ -5,21 +5,29 @@ const { totalDebtPayments, totalContributions } = require('./main.js');
 const debtPaymentGoals = [500, 1000, 10000, 50000, 100000];
 const contributionGoals = [500, 1000, 10000, 50000, 100000];
 
+let highestReachedDebtGoal = 0;
 for (const debtPaymentGoal of debtPaymentGoals) {
-  const hasReachedDebtPaymentGoal = totalDebtPayments >= debtPaymentGoal;
-  if (hasReachedDebtPaymentGoal) {
-    console.log(
-      `Congratulations! You have reached the ${debtPaymentGoal} debt payment goal!`
-);
+  if (totalDebtPayments >= debtPaymentGoal) {
+    highestReachedDebtGoal = debtPaymentGoal;
   }
 }
 
+let highestReachedContributionGoal = 0;
 for (const contributionGoal of contributionGoals) {
-  const hasReachedContributionGoal = totalContributions >= contributionGoal;
-  if (hasReachedContributionGoal) {
-    console.log(
-      `Congratulations! You have reached the ${contributionGoal} contribution goal!`
-);
+  if (totalContributions >= contributionGoal) {
+    highestReachedContributionGoal = contributionGoal;
   }
+}
+
+if (highestReachedDebtGoal !== 0) {
+  console.log(
+    `Congratulations! You have reached the ${highestReachedDebtGoal} debt payment goal!`
+);
+}
+
+if (highestReachedContributionGoal !== 0) {
+  console.log(
+    `Congratulations! You have reached the ${highestReachedContributionGoal} contribution goal!`
+);
 }
 
